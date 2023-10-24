@@ -12,7 +12,7 @@
 
         <body>
 
-                 <h1>Calculadora de María Muñoz </h1>
+                 <h1>Calculadora de María Muñoz</h1>
 
                  Number:
 
@@ -20,10 +20,14 @@
 
                  <p>
 
- <button onclick="inverse()"> 1/x </button>
- <button onclick="square()"> x^2 </button>                        
- <button onclick="cube()"> x^3 </button>                        
- 
+                         <button onclick="inverse()"> 1/x </button>
+                        
+                         <button onclick="square()"> x^2 </button>                        
+
+                         <button onclick="cube()"> x^3 </button>                        
+
+                         <button onclick="sine()"> sin </button>
+
                  </p>
 
                  <script type="text/javascript">
@@ -51,6 +55,14 @@
 
                          }
 
+
+                         function sine() {
+
+                                  var num = document.getElementById("n1");
+
+                                  num.value = Math.sin(num.value);
+
+                         }
 
                  </script>
 
